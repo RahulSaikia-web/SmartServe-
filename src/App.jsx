@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-
+import React from "react"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HeroSection from "./components/Home/HeroSection"
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <h1>Hello World</h1>
+    <Routes>
+        <Route path="/" element={<HeroSection />}/>
+      </Routes>
     </>
   )
 }
