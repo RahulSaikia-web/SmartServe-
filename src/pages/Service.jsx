@@ -1,5 +1,6 @@
 import React from "react";
 import "./Service.css";
+import TopService from "./TopService";
 function Service() {
   return (
     <>
@@ -58,6 +59,7 @@ function Service() {
           {/* Demo Box End Here  */}
         </div>
       </div>
+      <TopService />
     </>
   );
 }
